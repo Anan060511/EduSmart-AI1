@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>EduSmart AI - Trợ lý học tập</title>
+        <link rel="stylesheet" href="/style.css">
+        </head>
+        <body>
+          <div class="app">
+              <aside class="sidebar">
+                    <div class="brand">🎓 EduSmart <span>AI</span></div>
+                          <button class="new-chat" onclick="newChat()">＋ Cuộc trò chuyện mới</button>
+                                <div class="side-label">TRỢ LÝ HỌC TẬP</div>
+                                      <p class="side-item">📚 Giải đáp bài tập</p>
+                                            <p class="side-item">✍️ Hỗ trợ viết văn</p>
+                                                  <p class="side-item">🔬 Khoa học tự nhiên</p>
+                                                        <p class="side-item">🌍 Lịch sử và địa lý</p>
+                                                              <div class="side-footer">Học tập thông minh hơn mỗi ngày ✨</div>
+                                                                  </aside>
+
+                                                                      <main class="main">
+                                                                            <header class="topbar">
+                                                                                    <button class="menu" onclick="toggleSidebar()">☰</button>
+                                                                                            <div>
+                                                                                                      <strong>EduSmart AI</strong>
+                                                                                                                <div class="status"><span class="dot"></span> Trợ lý học tập trực tuyến</div>
+                                                                                                                        </div>
+                                                                                                                              </header>
+
+                                                                                                                                    <section id="messages" class="messages">
+                                                                                                                                            <div class="welcome" id="welcome">
+                                                                                                                                                      <div class="welcome-icon">🎓</div>
+                                                                                                                                                                <h1>Xin chào, học sinh!</h1>
+                                                                                                                                                                          <p>Mình có thể giúp bạn học tập hôm nay như thế nào?</p>
+
+                                                                                                                                                                                    <div class="suggestions">
+                                                                                                                                                                                                <button onclick="useSuggestion('Giải thích một bài toán cho mình')">🧮 Giải thích bài toán</button>
+                                                                                                                                                                                                            <button onclick="useSuggestion('Giúp mình viết một đoạn văn')">✍️ Viết đoạn văn</button>
+                                                                                                                                                                                                                        <button onclick="useSuggestion('Giải thích một kiến thức khoa học')">🔬 Học khoa học</button>
+                                                                                                                                                                                                                                    <button onclick="useSuggestion('Tạo cho mình một kế hoạch học tập')">📅 Lập kế hoạch học</button>
+                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                                                                            </section>
+
+                                                                                                                                                                                                                                                                  <form id="chatForm" class="composer">
+                                                                                                                                                                                                                                                                          <textarea id="messageInput" placeholder="Nhập câu hỏi học tập của bạn..." rows="1" required></textarea>
+                                                                                                                                                                                                                                                                                  <button id="sendBtn" type="submit" aria-label="Gửi câu hỏi">➤</button>
+                                                                                                                                                                                                                                                                                          <div class="disclaimer">EduSmart AI có thể mắc lỗi. Hãy kiểm tra lại thông tin quan trọng.</div>
+                                                                                                                                                                                                                                                                                                </form>
+                                                                                                                                                                                                                                                                                                    </main>
+                                                                                                                                                                                                                                                                                                      </div>
+
+                                                                                                                                                                                                                                                                                                        <script type="module" src="/script.js"></script>
+                                                                                                                                                                                                                                                                                                        </body>
+                                                                                                                                                                                                                                                                                                        </html>

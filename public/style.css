@@ -1,0 +1,306 @@
+:root {
+      font-family: Inter, Arial, sans-serif;
+        color: #edf2ff;
+          background: #0b1020;
+            font-synthesis: none;
+            }
+
+            * {
+              box-sizing: border-box;
+              }
+
+              body {
+                margin: 0;
+                  min-height: 100vh;
+                    background:
+                        radial-gradient(ellipse at top, #17264a 0, #0b1020 55%);
+                        }
+
+                        button, textarea {
+                          font: inherit;
+                          }
+
+                          button {
+                            cursor: pointer;
+                            }
+
+                            .app {
+                              display: flex;
+                                min-height: 100vh;
+                                }
+
+                                .sidebar {
+                                  width: 260px;
+                                    padding: 24px 16px;
+                                      background: rgba(9, 14, 29, .96);
+                                        border-right: 1px solid #26304b;
+                                          display: flex;
+                                            flex-direction: column;
+                                              flex-shrink: 0;
+                                              }
+
+                                              .brand {
+                                                font-size: 21px;
+                                                  font-weight: 800;
+                                                    margin: 8px 4px 30px;
+                                                    }
+
+                                                    .brand span {
+                                                      color: #a78bfa;
+                                                      }
+
+                                                      .new-chat {
+                                                        padding: 13px;
+                                                          border: 1px solid #394566;
+                                                            background: #18213b;
+                                                              color: white;
+                                                                border-radius: 12px;
+                                                                  text-align: left;
+                                                                  }
+
+                                                                  .new-chat:hover,
+                                                                  .suggestions button:hover {
+                                                                    background: #26375c;
+                                                                    }
+
+                                                                    .side-label {
+                                                                      margin: 30px 8px 12px;
+                                                                        font-size: 11px;
+                                                                          letter-spacing: 1.5px;
+                                                                            color: #8794b4;
+                                                                            }
+
+                                                                            .side-item {
+                                                                              color: #bdc8e2;
+                                                                                padding: 10px 8px;
+                                                                                  border-radius: 8px;
+                                                                                    margin: 2px 0;
+                                                                                      font-size: 14px;
+                                                                                      }
+
+                                                                                      .side-footer {
+                                                                                        margin-top: auto;
+                                                                                          padding: 16px 4px 0;
+                                                                                            color: #8290b0;
+                                                                                              font-size: 12px;
+                                                                                              }
+
+                                                                                              .main {
+                                                                                                flex: 1;
+                                                                                                  min-width: 0;
+                                                                                                    display: flex;
+                                                                                                      flex-direction: column;
+                                                                                                        min-height: 100vh;
+                                                                                                        }
+
+                                                                                                        .topbar {
+                                                                                                          display: flex;
+                                                                                                            align-items: center;
+                                                                                                              gap: 14px;
+                                                                                                                padding: 18px 24px;
+                                                                                                                  border-bottom: 1px solid #26304b;
+                                                                                                                    background: rgba(11, 16, 32, .7);
+                                                                                                                    }
+
+                                                                                                                    .topbar strong {
+                                                                                                                      font-size: 16px;
+                                                                                                                      }
+
+                                                                                                                      .status {
+                                                                                                                        color: #9ba9c8;
+                                                                                                                          font-size: 12px;
+                                                                                                                            margin-top: 5px;
+                                                                                                                            }
+
+                                                                                                                            .dot {
+                                                                                                                              display: inline-block;
+                                                                                                                                width: 7px;
+                                                                                                                                  height: 7px;
+                                                                                                                                    background: #4ade80;
+                                                                                                                                      border-radius: 50%;
+                                                                                                                                        margin-right: 5px;
+                                                                                                                                        }
+
+                                                                                                                                        .menu {
+                                                                                                                                          display: none;
+                                                                                                                                            border: 0;
+                                                                                                                                              background: transparent;
+                                                                                                                                                color: white;
+                                                                                                                                                  font-size: 22px;
+                                                                                                                                                  }
+
+                                                                                                                                                  .messages {
+                                                                                                                                                    width: 100%;
+                                                                                                                                                      max-width: 900px;
+                                                                                                                                                        padding: 32px 24px;
+                                                                                                                                                          margin: 0 auto;
+                                                                                                                                                            flex: 1;
+                                                                                                                                                            }
+
+                                                                                                                                                            .welcome {
+                                                                                                                                                              text-align: center;
+                                                                                                                                                                padding-top: 10vh;
+                                                                                                                                                                }
+
+                                                                                                                                                                .welcome-icon {
+                                                                                                                                                                  font-size: 48px;
+                                                                                                                                                                    margin-bottom: 18px;
+                                                                                                                                                                    }
+
+                                                                                                                                                                    .welcome h1 {
+                                                                                                                                                                      font-size: clamp(26px, 4vw, 38px);
+                                                                                                                                                                        margin: 0 0 12px;
+                                                                                                                                                                          background: linear-gradient(90deg, #c4b5fd, #93c5fd);
+                                                                                                                                                                            -webkit-background-clip: text;
+                                                                                                                                                                              background-clip: text;
+                                                                                                                                                                                color: transparent;
+                                                                                                                                                                                }
+
+                                                                                                                                                                                .welcome > p {
+                                                                                                                                                                                  color: #aab7d2;
+                                                                                                                                                                                    line-height: 1.7;
+                                                                                                                                                                                    }
+
+                                                                                                                                                                                    .suggestions {
+                                                                                                                                                                                      display: grid;
+                                                                                                                                                                                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                                                                                                                                                                                          gap: 12px;
+                                                                                                                                                                                            max-width: 600px;
+                                                                                                                                                                                              margin: 34px auto 0;
+                                                                                                                                                                                              }
+
+                                                                                                                                                                                              .suggestions button {
+                                                                                                                                                                                                padding: 16px;
+                                                                                                                                                                                                  text-align: left;
+                                                                                                                                                                                                    color: #dbe5ff;
+                                                                                                                                                                                                      background: #131d35;
+                                                                                                                                                                                                        border: 1px solid #2b395a;
+                                                                                                                                                                                                          border-radius: 14px;
+                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                          .composer {
+                                                                                                                                                                                                            width: calc(100% - 40px);
+                                                                                                                                                                                                              max-width: 800px;
+                                                                                                                                                                                                                margin: 0 auto 24px;
+                                                                                                                                                                                                                  padding: 12px;
+                                                                                                                                                                                                                    display: grid;
+                                                                                                                                                                                                                      grid-template-columns: 1fr 44px;
+                                                                                                                                                                                                                        gap: 8px;
+                                                                                                                                                                                                                          background: #141d32;
+                                                                                                                                                                                                                            border: 1px solid #354363;
+                                                                                                                                                                                                                              border-radius: 18px;
+                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                              .composer textarea {
+                                                                                                                                                                                                                                resize: none;
+                                                                                                                                                                                                                                  max-height: 150px;
+                                                                                                                                                                                                                                    min-height: 42px;
+                                                                                                                                                                                                                                      padding: 12px;
+                                                                                                                                                                                                                                        color: white;
+                                                                                                                                                                                                                                          background: transparent;
+                                                                                                                                                                                                                                            border: none;
+                                                                                                                                                                                                                                              outline: none;
+                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                              .composer textarea::placeholder {
+                                                                                                                                                                                                                                                color: #8b9ab8;
+                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                .composer #sendBtn {
+                                                                                                                                                                                                                                                  align-self: end;
+                                                                                                                                                                                                                                                    height: 42px;
+                                                                                                                                                                                                                                                      border: 0;
+                                                                                                                                                                                                                                                        border-radius: 12px;
+                                                                                                                                                                                                                                                          color: white;
+                                                                                                                                                                                                                                                            font-size: 21px;
+                                                                                                                                                                                                                                                              background: linear-gradient(135deg, #7c3aed, #4f46e5);
+                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                              .composer #sendBtn:disabled {
+                                                                                                                                                                                                                                                                opacity: .5;
+                                                                                                                                                                                                                                                                  cursor: wait;
+                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                  .disclaimer {
+                                                                                                                                                                                                                                                                    grid-column: 1 / -1;
+                                                                                                                                                                                                                                                                      color: #8290ad;
+                                                                                                                                                                                                                                                                        text-align: center;
+                                                                                                                                                                                                                                                                          font-size: 11px;
+                                                                                                                                                                                                                                                                            padding-top: 3px;
+                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                            .message {
+                                                                                                                                                                                                                                                                              white-space: pre-wrap;
+                                                                                                                                                                                                                                                                                overflow-wrap: anywhere;
+                                                                                                                                                                                                                                                                                  line-height: 1.75;
+                                                                                                                                                                                                                                                                                    margin: 18px 0;
+                                                                                                                                                                                                                                                                                      padding: 15px 18px;
+                                                                                                                                                                                                                                                                                        border-radius: 15px;
+                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                        .message.user {
+                                                                                                                                                                                                                                                                                          background: #27365a;
+                                                                                                                                                                                                                                                                                            margin-left: 12%;
+                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                            .message.ai {
+                                                                                                                                                                                                                                                                                              background: #141d32;
+                                                                                                                                                                                                                                                                                                border: 1px solid #2c3958;
+                                                                                                                                                                                                                                                                                                  margin-right: 5%;
+                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                  .message.error {
+                                                                                                                                                                                                                                                                                                    color: #fecaca;
+                                                                                                                                                                                                                                                                                                      border-color: #7f1d1d;
+                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                      @media (max-width: 650px) {
+                                                                                                                                                                                                                                                                                                        .sidebar {
+                                                                                                                                                                                                                                                                                                            display: none;
+                                                                                                                                                                                                                                                                                                                position: fixed;
+                                                                                                                                                                                                                                                                                                                    z-index: 5;
+                                                                                                                                                                                                                                                                                                                        inset: 0 auto 0 0;
+                                                                                                                                                                                                                                                                                                                            width: 260px;
+                                                                                                                                                                                                                                                                                                                                box-shadow: 0 0 0 100vmax #0008;
+                                                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                                                    .sidebar.open {
+                                                                                                                                                                                                                                                                                                                                        display: flex;
+                                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                                            .menu {
+                                                                                                                                                                                                                                                                                                                                                display: block;
+                                                                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                                                                    .topbar {
+                                                                                                                                                                                                                                                                                                                                                        padding: 15px;
+                                                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                                                            .messages {
+                                                                                                                                                                                                                                                                                                                                                                padding: 20px 14px;
+                                                                                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                                                                                    .welcome {
+                                                                                                                                                                                                                                                                                                                                                                        padding-top: 6vh;
+                                                                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                                                                            .suggestions {
+                                                                                                                                                                                                                                                                                                                                                                                grid-template-columns: 1fr;
+                                                                                                                                                                                                                                                                                                                                                                                    gap: 9px;
+                                                                                                                                                                                                                                                                                                                                                                                        margin-top: 24px;
+                                                                                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                                                                                            .suggestions button {
+                                                                                                                                                                                                                                                                                                                                                                                                padding: 13px;
+                                                                                                                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                                                                                                                    .composer {
+                                                                                                                                                                                                                                                                                                                                                                                                        width: calc(100% - 20px);
+                                                                                                                                                                                                                                                                                                                                                                                                            margin-bottom: 12px;
+                                                                                                                                                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                .message.user {
+                                                                                                                                                                                                                                                                                                                                                                                                                    margin-left: 5%;
+                                                                                                                                                                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                                                                                                                                                                                      }
+}

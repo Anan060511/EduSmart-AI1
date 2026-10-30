@@ -1,0 +1,29 @@
+{
+  "name": "edusmart-ai1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anan060511/EduSmart-AI1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Anan060511/EduSmart-AI1/issues"
+  },
+  "homepage": "https://github.com/Anan060511/EduSmart-AI1#readme",
+  "dependencies": {
+    "@google/genai": "^2.32.0",
+    "dompurify": "^3.4.17",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "marked": "^18.1.2"
+  }
+}
